@@ -24,7 +24,7 @@ To Check
 ```
 
 ```
-Set-AdfsProperties -EnableIdPInitiatedSignonPage $true
+Set-AdfsProperties -EnableidPinitiatedSignonPage $true
 ```
 
 ```
