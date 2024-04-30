@@ -4,9 +4,13 @@ Windows Server ADFS commands
 
 ### Install ADFS
 
-```Install-WindowsFeature adfs-federration -IncludeManagementTools```
+```
+Install-WindowsFeature adfs-federration -IncludeManagementTools
+```
 
-```Add-KdsRootKey -EffectiveImmediately```
+```
+Add-KdsRootKey -EffectiveImmediately
+```
 
 
 
@@ -15,10 +19,16 @@ Windows Server ADFS commands
 
 To Check
 
-```(Get-AdfsProperties).enableidpinitiatedsignonpage```
+```
+(Get-AdfsProperties).enableidpinitiatedsignonpage
+```
 
-```Set-AdfsProperties -EnableIdPInitiatedSignonPage $true```
+```
+Set-AdfsProperties -EnableIdPInitiatedSignonPage $true
+```
 
-```(Get-AdfsProperties).enableidpinitiatedsignonpage```
+```
+(Get-AdfsProperties).enableidpinitiatedsignonpage
+```
 
 
