@@ -5,7 +5,7 @@ Windows Server ADFS commands
 ### Install ADFS
 
 ```
-Install-WindowsFeature adfs-federration -IncludeManagementTools
+Install-WindowsFeature adfs-federation -IncludeManagementTools
 ```
 
 ```
