@@ -9,6 +9,18 @@ Install-WindowsFeature adfs-federation -IncludeManagementTools
 ```
 
 ```
+
+# Define the federation service name and the SSL certificate thumbprint
+$federationServiceName = "fs.yourdomain.com"
+$certThumbprint = "YOUR_CERTIFICATE_THUMBPRINT"
+
+# Create the ADFS farm
+Install-AdfsFarm -CertificateThumbprint $certThumbprint -FederationServiceDisplayName "Your Federation Service" -FederationServiceName $federationServiceName -Credential (Get-Credential)
+
+```
+
+
+```
 Add-KdsRootKey -EffectiveImmediately
 ```
 ![Screenshot_1](https://github.com/0xMasud101/Active-Directory-Federation-Service-ADFS/assets/39289859/78078ec3-e96a-4449-9fbe-0b012c3edb78)
